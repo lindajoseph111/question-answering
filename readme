@@ -1,0 +1,41 @@
+Before running the script /DistanceBasedApproaches.ipynb
+**********************************************************************************
+
+#prerequisites 
+#pip install bert-serving-server  # server
+#pip install bert-serving-client  # client, independent of `bert-serving-server`
+
+#to run this we need to start bert server from the command prompt
+#got to anaconda prompt
+#activate virtual environment , if you are using a virtual environment for running this code
+#run the command
+#bert-serving-start -model_dir C:\Users\ASUS\NLP\embeddings\uncased_L-12_H-768_A-12 -num_worker 1
+
+#C:\Users\ASUS\NLP\embeddings\uncased_L-12_H-768_A-127 this is the folder to which i downloaded the pretrained BERT, you can download it from
+
+#https://github.com/google-research/bert#pre-trained-models
+
+
+
+
+Running the Web application:
+*************************************************************************************************
+
+
+1)	Go to the Anaconda command prompt
+2)	Activate virtual environment if you are running the app from virtual environment
+3)	Install flask if it is not already installed in your system, using the command
+‘pip install flask’
+
+4)	If running on linux, export FLASK_APP environment variable. (All the files for web app is in the WebApp folder)
+export FLASK_APP= app_folder_path\app.py
+In windows machine
+set FLASK_APP=app_older_path\app.py
+eg: set FLASK_APP=C:\QAsystem\app.py
+5)	Go the app folder, and run the command ‘flask run’
+
+
+
+Link for embeddings: 
+https://nlp.stanford.edu/projects/glove/> [Accessed 27 August 2020].
+<https://code.google.com/archive/p/word2vec/> 
